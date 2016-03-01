@@ -1,0 +1,48 @@
+<!DOCTYPE  html>
+<html lang="es" ng-app="app">
+	<head>
+		<title>expositions</title>
+	    <meta charset="UTF-8">
+	    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico" />
+	    <link rel='stylesheet' type='text/css' href='../../css/estilosDavid.css'>
+	    <link rel='stylesheet' type='text/css' href='../../css/estilosAltaNavidad.css'>
+	    <script type="text/javascript" src="js/controllers.js"></script>
+	    <link  rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/foundation.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"  />
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/controllers.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$('body').hide();
+			$('body').fadeIn(2000);
+			});
+		</script>
+		
+	</head>
+	<body>
+	    <div id="cont">
+        <div id="header"><span class="title"><b>A</b>rt of <b>A</b>rchitecture</span>
+            <span class="enlaces">
+                <a href="../../login.php">Login</a>
+                <a href="../about.php">About Us</a>
+                <a href="../exposiciones.php"><b class="selected">Expositions</b></a>
+                <a href="../david.php">David</a>
+                <a href="../../index.php">Home</a>
+            </span>
+        </div>
+        
+		<div class="row" ng-controller="appController">
+			
+			<a href="#/add"><div id="botonmodal" class="btn btn-warning" style="margin-bottom:15px;">
+                <span>Añadir exposicion</span>
+            </div></a>
+		    
+			<div id="view" ng-view></div>
+		</div>
+		
+		
+		</div>
+	</body>
+</html>

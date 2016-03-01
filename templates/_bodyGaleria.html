@@ -1,0 +1,22 @@
+<div id="header" style="min-height:150px;"><span class="title"><b>A</b>rt of <b>A</b>rchitecture</span>
+    <div id="bajar"><span class="enlaces" id="bajar">
+        <a href="user.php">Profile</a>
+        <a href="about.php">About Us</a>
+        <a href="exposiciones.php">Expositions</a>
+        <a href="quentin.php">Quentin</a>
+        <a href="david.php">David</a>
+        <a href="../index.php">Home</a>
+    </span>
+    </div>
+</div>
+<div id="galeria">
+    <span class="alias">{usuario}</span>
+    <form action="uploadimages.php" method="POST" enctype="multipart/form-data">
+        <div class="fileUpload btn btn-warning">
+            <span>Choose Images</span>
+            <input name="archivo" type="file" multiple placeholder="imagen" class="input username upload" value="" onfocus="this.value=''" />
+        </div>
+        <button type="submit" class="btn btn-success">Save Changes</button>
+     </form>
+    {slider}
+</div>
